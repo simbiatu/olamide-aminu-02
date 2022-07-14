@@ -14,10 +14,14 @@ const assignment = {};
  * @returns number the sum of the numbers
  */
 N=5
-Sum = 2+4+6+8+10
-Average=Sum/N
 function sumOfNumbers(arrayOfNumbers) {
-    return arrayOfNumbers.length;
+  let total = 0;
+  let i = 0;
+while (i< arrayOfNumbers.length){
+  total += arrayOfNumbers[i]
+  i++
+}
+    return total;
 }
  assignment.sumOfNumbers = sumOfNumbers;
 
@@ -31,9 +35,15 @@ function sumOfNumbers(arrayOfNumbers) {
  * @returns number the count of even numbers
  */
 function countEvenNumbers(arrayOfNumbers) {
-    return arrayOfNumbers.length;
+  let total = 0;
+  for(let i =0 ; i<arrayOfNumbers.length; i ++) {
+  if (arrayOfNumbers[i] % 2=== 0) {
+    total ++
+  }
+  }
+    return total;
 }
-// assignment.countEvenNumbers = countEvenNumbers;
+assignment.countEvenNumbers = countEvenNumbers;
 
 /**
  * Challenge - 3
